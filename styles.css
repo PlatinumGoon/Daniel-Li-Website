@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+h3{
+  text-align: center;
+  margin: auto;
+  color: #ffffff;
+}
+body {
+  background: linear-gradient(to bottom, #7bf9f9, #8888f7);
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > div {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: auto;
+  font-family: "Roboto";
+  font-size: 2rem;
+  color: #207fd8;
+}
+.information-text > div {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 2rem;
+}
+.header {  
+  margin-bottom: 10px; /* space between header and data */  
+}  
+#rcorners1 {
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  background: #2181ad;
+  padding: 20px;
+  width: auto;
+  height: auto;
+}
+/* From Uiverse.io by vikas7754 */ 
+@keyframes blinkCursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typeAndDelete {
+  0%,
+  10% {
+    width: 0;
+  }
+
+  45%,
+  55% {
+    width: 9.65em;
+  }
+
+  90%,
+  100% {
+    width: 0;
+  }
+}
+
+.terminal-loader {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  background: #1c1c1c;
+  border: 1px solid #ffffff3e;
+  border-radius: 9.5px;
+  overflow: hidden;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.terminal-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #343434;
+  padding: 6px;
+}
+
+.terminal-controls {
+  position: absolute;
+  left: 10px;
+  display: flex;
+  gap: 7px;
+}
+
+.control {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #777;
+}
+
+.control.close {
+  background-color: #e33;
+}
+
+.control.minimize {
+  background-color: #ee0;
+}
+
+.control.maximize {
+  background-color: #0b0;
+}
+
+.terminal-title {
+  color: #eeeeeec1;
+  font-family: "Roboto";
+}
+
+.content {
+  padding: 10px;
+}
+.text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid green;
+  animation: typeAndDelete 4s steps(21) infinite,
+    blinkCursor 0.5s step-end infinite alternate;
+  color: rgb(0, 196, 0);
+  font-weight: 600;
+  font-family: "Roboto";
+}
